@@ -1,0 +1,9 @@
+CHIP Mult4 {
+	IN in[16];
+	OUT out[16];
+	
+	PARTS:
+	Add16( a = in, b = in, out = Dvos); //input dvaput podupla
+	Add16( a = Dvos, b = Dvos, out = out);
+	
+}
